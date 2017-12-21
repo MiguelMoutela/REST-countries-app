@@ -149,6 +149,8 @@ const CountryInfo = function () {
 
 CountryInfo.prototype.render = function (country) {
   // TODO: Render country info
+  this.ul.appendChild(createListItem(country.name, country.population));
+
 }
 
 CountryInfo.prototype.createListItem = function (label, content) {
